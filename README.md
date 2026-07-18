@@ -130,24 +130,16 @@ Enter your choice:
 Navigate using numeric menu choices. All data is saved automatically on every change and on exit.
 
 
-📁 File Structure
-
-.
-├── HMS.c               # Full source code (single-file project)
-├── patients.dat        # Binary: patient records (auto-generated)
-├── doctors.dat         # Binary: doctor records (auto-generated)
-├── beds.dat            # Binary: bed allocation state (auto-generated)
-├── appointments.dat    # Binary: appointment records (auto-generated)
-└── emergency.dat       # Binary: emergency queue (auto-generated)
-
-
-⚠️ The .dat files are generated automatically at runtime. Do not manually edit them.
-
-
-
-
 🛏️ Bed Configuration
 
-WardBedsCharge/DayGeneral10₹500ICU10₹1,500Private10₹1,000Total30—
++----------+-------+------------+
+|  Ward    | Beds  | Charge/Day |
++----------+-------+------------+
+| General  |  10   |  Rs. 500   |
+| ICU      |  10   | Rs. 1500   |
+| Private  |  10   | Rs. 1000   |
++----------+-------+------------+
+| Total    |  30   |     -      |
++----------+-------+------------+
 
 These values can be adjusted via the #define constants at the top of HMS.c.
